@@ -1,3 +1,4 @@
+/* 1 task */
 @media print {
 
     .tm-sidebar,
@@ -49,6 +50,7 @@
 
 }
 
+/* 2 task */
 @media screen {
     .tm-content-box.flex-2-col:first-child {
         display: flex;
@@ -59,141 +61,152 @@
     img[alt="epam-mexico"] {
         width: 100%;
     }
-}
 
-#about ul li.box-bg:hover {
-    background-color: #31b0d5;
-    cursor: pointer;
-}
 
-#about ul li.box-bg h2:hover {
-    color: white;
-    font-weight: bold;
-}
+    #about ul li.box-bg:hover {
+        background-color: #31b0d5;
+        cursor: pointer;
+    }
 
-p:first-letter {
-    color: #87CEFA;
-    font-size: 30px;
-}
+    #about ul li.box-bg h2:hover {
+        color: white;
+        font-weight: bold;
+    }
 
-.tm-content-box,
-.tm-sidebar,
-.blocks {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-}
+    /* 3 task */
+    p:first-letter {
+        color: #87CEFA;
+        font-size: 30px;
+    }
 
-.blocks .tm-content-box {
-    box-shadow: none;
-}
+    /* 4 task */
+    .tm-content-box,
+    .tm-sidebar,
+    .blocks {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    }
 
-.tm-banner {
-    padding: 0;
-    border: 30px solid #f5f5f5;
-}
+    .blocks .tm-content-box {
+        box-shadow: none;
+    }
 
-.tm-content-box {
-    position: relative;
-}
+    .tm-banner {
+        padding: 0;
+        border: 30px solid #f5f5f5;
+    }
 
-section {
-    position: relative;
-}
+    /* 5 task */
+    .tm-content-box {
+        position: relative;
+    }
 
-section::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-top: 30px solid #31b0d5;
-    border-right: 150px solid transparent;
-}
+    section {
+        position: relative;
+    }
 
-.tm-content-box.flex-2-col:nth-child(2)::after {
-    display: none;
-}
+    section::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: 30px solid #31b0d5;
+        border-right: 150px solid transparent;
+    }
 
-div.carousel-content h2.tm-section-title {
-    color: gainsboro;
-    letter-spacing: 5px;
-}
+    .tm-content-box.flex-2-col:nth-child(2)::after {
+        display: none;
+    }
 
-h2+p {
-    font-style: italic;
-}
 
-p {
-    text-indent: 15px;
-    line-height: 1.7;
-}
+    /* 6 task */
+    div.carousel-content h2.tm-section-title {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
 
-.text:first-child::after,
-.text:nth-child(3)::after {
-    content: "New";
-    color: red;
-    font-size: 10px;
-    vertical-align: super;
-}
+    /* 7 task */
+    h2+p {
+        font-style: italic;
+    }
 
-.padding-medium ol a:visited {
-    text-decoration: underline;
-}
+    /* 8 task */
+    p {
+        text-indent: 15px;
+        line-height: 1.7;
+    }
 
-.padding-medium ol a:hover {
-    color: #31b0d5;
-    text-decoration: underline double;
-}
+    /* !!!9 task */
+    .text:first-child::after,
+    .text:nth-child(3)::after {
+        content: "New";
+        color: red;
+        font-size: 10px;
+        vertical-align: super;
+    }
 
-.padding-medium ol a {
-    color: black;
-}
+    .padding-medium ol a:visited {
+        text-decoration: underline;
+    }
 
-.box-work {
-    padding: 10px;
-}
+    .padding-medium ol a:hover {
+        color: #31b0d5;
+        text-decoration: underline double;
+    }
 
-.boxes.gallery-container div p {
-    text-indent: initial;
-    line-height: 1.6em;
-    color: black;
-}
+    .padding-medium ol a {
+        color: black;
+    }
 
-section.blocks ul li:nth-child(even) {
-    background: #f2f2f2;
-}
+    /* 10 task */
+    .box-work {
+        padding: 10px;
+    }
 
-.blocks .tm-content-box ul li p:first-letter {
-    color: black;
-}
+    .boxes.gallery-container div p {
+        text-indent: initial;
+        line-height: 1.6em;
+        color: black;
+    }
 
-.mandatory-field::after {
-    content: "*";
-    color: red;
-    font-weight: bold;
-    vertical-align: top;
-}
+    section.blocks ul li:nth-child(even) {
+        background: #f2f2f2;
+    }
 
-.contact-form button {
-    background: #ffffff;
-    color: #31b0d5;
-    border: 1px solid #31b0d5;
-    border-radius: 0;
-    padding: 20px 50px;
-}
+    .blocks .tm-content-box ul li p:first-letter {
+        color: black;
+    }
 
-.contact-form {
-    text-align: right;
-}
+    /* 11 task */
+    .mandatory-field::after {
+        content: "*";
+        color: red;
+        font-weight: bold;
+        vertical-align: top;
+    }
 
-.submit-btn:hover {
-    color: #f5f5f5;
-    background: rgba(49, 175, 213, 0.7);
-    border-color: transparent;
-}
+    .contact-form button {
+        background: #ffffff;
+        color: #31b0d5;
+        border: 1px solid #31b0d5;
+        border-radius: 0;
+        padding: 20px 50px;
+    }
 
-.tm-nav-item:hover {
-    background-color: grey;
-}
+    .contact-form {
+        text-align: right;
+    }
+
+    .submit-btn:hover {
+        color: #f5f5f5;
+        background: rgba(49, 175, 213, 0.7);
+        border-color: transparent;
+    }
+
+    /* 12 task */
+    .tm-nav-item:hover {
+        background-color: grey;
+    }
 
 }
