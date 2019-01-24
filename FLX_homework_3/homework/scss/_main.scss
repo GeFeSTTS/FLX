@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: $BackGColor;
+    color: $TextColor;
+    font-family: $Font-Style;
+    font-size: $Font-Size;
+    line-height: 25px;
+}
+
+header {
+    background: $BackGImg no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    text-transform: uppercase;
+    color: $HeaderColor;
+
+    .logo {
+        width: 15%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .top-wrapper {
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    nav {
+        padding: 10px;
+
+        a {
+            color: $HeaderColor;
+            padding: 10px 100px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 600;
+
+            &:nth-child(2) {
+                border-left: 2px solid $NavBorderColor;
+                border-right: 2px solid $NavBorderColor;
+            }
+
+            &:hover {
+                color: darken($HeaderColor, 20%);
+            }
+        }
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px;
+
+        .btn {
+            cursor: pointer;
+            margin-top: 20px;
+            padding: 10px 70px;
+            background: $TopButtonColor;
+            border: none;
+            text-decoration: none;
+            color: #eeeeee;
+            transition-duration: 0.5s;
+
+            &:hover {
+                background: darken($TopButtonColor, 20%);
+            }
+        }
+    }
+}
+
+main {
+    max-width: 960px;
+    margin: auto;
+
+    .toolbar {
+        text-align: right;
+        padding: 7px 0;
+
+        input {
+            border: 2px solid;
+            border-color: $Search;
+            padding: 12px 12px 12px 15px;
+            margin: 10px;
+            color: $TextColor;
+            background: $BackGColor;
+            font-size: 15px;
+
+            &::placeholder {
+                color: $PlaceHolderColor;
+            }
+        }
+    }
+
+    .post-list {
+        h1 {
+            text-align: right;
+            text-transform: uppercase;
+            margin: 5px 0 0 0;
+        }
+
+        article {
+            background: $ArtBG;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            >div {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            .btn {
+                cursor: pointer;
+                padding: 10px 85px;
+                margin-bottom: 10px;
+                border: 0;
+                background: $TopButtonColor;
+                color: #eeeeee;
+                text-transform: uppercase;
+                transition-duration: 0.5s;
+
+                &:hover {
+                    background: darken($TopButtonColor, 20%);
+                }
+            }
+
+        }
+
+    }
+
+    .post {
+        h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            color: $h3Color;
+            text-transform: uppercase;
+        }
+
+        >p {
+            margin-top: 0;
+            line-height: 30px;
+        }
+
+        .post-description {
+            padding-left: 5px;
+            font-size: 0.8em;
+            color: $PostDes;
+            border-bottom: 1px solid $ArtBorderColor;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+
+}
+
+.about {
+    padding: 10px;
+
+    h1 {
+        text-align: right;
+        margin: 40px 5px 0 5px;
+        text-transform: uppercase;
+    }
+
+    p {
+        line-height: 25px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 960px;
+    }
+}
+
+.contact-form {
+    text-align: right;
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    h4 {
+        margin-top: 0;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    .input-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .input-item {
+        width: 100%;
+        display: inline-block;
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+
+    form {
+        font-size: $Font-Size;
+
+        input,
+        label {
+            width: 100%;
+            display: block;
+        }
+
+        label {
+            color: $h3Color;
+        }
+
+        input,
+        textarea {
+            color: $TextColor;
+            background: inherit;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 1px solid #bbbbbb;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px 85px;
+            border: 0;
+            background: $TopButtonColor;
+            border: none;
+            text-decoration: none;
+            color: #eeeeee;
+            transition-duration: 0.5s;
+
+            &:hover {
+                background: darken($TopButtonColor, 20%);
+            }
+
+        }
+    }
+}
+
+footer {
+    padding: 10px;
+    font-size: 0.9em;
+}
