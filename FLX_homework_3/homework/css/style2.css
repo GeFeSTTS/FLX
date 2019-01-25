@@ -8,7 +8,7 @@ body {
   line-height: 25px; }
 
 header {
-  background: url("/Homework EPAM/FLX_homework_3/homework/img/header_background_v2.jpg") no-repeat;
+  background: url("../img/header_background_v2.jpg") no-repeat;
   width: 100%;
   height: 100vh;
   background-size: cover;
