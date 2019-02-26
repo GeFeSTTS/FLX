@@ -3,7 +3,8 @@ let todoItems = [];
 
 const methods = {
   add(description) {
-    const id = 'task_' + +new Date();
+    const randomNumber = Math.floor(Math.random() * 9999999);
+    const id = 'task_' + randomNumber;
     const item = {description, id, isDone: false};
 
     todoItems.push(item);
