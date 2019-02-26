@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    width: 300px;
+    min-height: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    margin: 15px;
+}
+
+input {
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#add-new-task {
+    margin: 20px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+ul:empty + p {
+    display: block;
+}
+
+button {
+    padding: 5px;
+    cursor: pointer;
+}
+#add-new-task,
+.cancel-btn,
+.save-changes-btn {
+    padding: 8px 30px;
+    border-radius: 5px;
+}
+
+section {
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.todo-text {
+    font-size: 25px;
+}
+
+footer {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-done,
+.checkbox-undone,
+.todo-text,
+.remove {
+    width: 35px;
+    height: 35px;
+    border: 0;
+    background-color: unset;
+}
+
+.checkbox-undone {
+    background-image: url("./img/todo-s.png");
+}
+
+.checkbox-done {
+    background-image: url("./img/done-s.png");    
+}
+
+.checkbox-done + .todo-text {
+    background: #bbb;
+}
+
+.remove {
+    background-image: url("./img/remove-s.jpg");
+}
+
+.empty-todo {
+    text-align: center;
+    display: none;
+}
+
+.todo-text {
+    flex: 1;
+}
+
+.empty-todo {
+    font-size: 20px;
+}
