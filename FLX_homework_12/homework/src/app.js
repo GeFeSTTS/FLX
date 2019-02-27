@@ -1,10 +1,10 @@
 const rootNode = document.getElementById('root');
 let todoItems = [];
+let randomNumber = 9999999;
 
 const methods = {
   add(description) {
-    const randomNumber = Math.floor(Math.random() * 9999999);
-    const id = 'task_' + randomNumber;
+    const id = 'task_' + Math.floor(Math.random() * randomNumber);
     const item = {description, id, isDone: false};
 
     todoItems.push(item);
